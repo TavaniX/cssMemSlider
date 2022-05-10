@@ -2,6 +2,7 @@
     color: #f8ecd1;
     background-color: rgb(51, 46, 46);
     box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -122,6 +123,26 @@ input {
     border-color: #85586f;
 }
 
+.author {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.gitlogo {
+    width: 50px;
+    height: 50px;
+    margin: 10rem auto 5px;
+}
+.gitlogo a {
+    transition: all 0.3s ease-in-out;
+
+    fill: #e9d5da;
+}
+.gitlogo a:hover {
+    cursor: pointer;
+    fill: #85586f;
+}
+
 @media screen and (max-width: 575px) {
     h1 {
         font-size: 24px;
@@ -134,6 +155,9 @@ input {
         margin-bottom: 15px;
     }
     .footer .img-descriptions span {
-        font-size: 20px;
+        font-size: 1rem;
+    }
+    .gitlogo {
+        margin-top: 20rem;
     }
 }
