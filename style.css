@@ -1,4 +1,100 @@
 * {
-    color: white;
+    color: #f8ecd1;
     background-color: rgb(51, 46, 46);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+input {
+    display: none;
+}
+
+.slider-wrapper {
+    max-width: 50rem;
+    display: flex;
+}
+
+.slider-wrapper img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0.1rem solid #deb6ab;
+    box-shadow: 0 0 0.6rem #85586f;
+    border-radius: 0.5rem;
+}
+.slider-wrapper .slide,
+.footer span {
+    display: none;
+}
+
+#img-1:checked ~ .slider-wrapper .slide-1,
+#img-2:checked ~ .slider-wrapper .slide-2,
+#img-3:checked ~ .slider-wrapper .slide-3,
+#img-4:checked ~ .slider-wrapper .slide-4 {
+    display: block;
+}
+#img-1:checked ~ .footer span:nth-child(1),
+#img-2:checked ~ .footer span:nth-child(2),
+#img-3:checked ~ .footer span:nth-child(3),
+#img-4:checked ~ .footer span:nth-child(4) {
+    display: block;
+}
+#img-1:checked ~ .footer .btn:nth-child(1) span,
+#img-2:checked ~ .footer .btn:nth-child(2) span,
+#img-3:checked ~ .footer .btn:nth-child(3) span,
+#img-4:checked ~ .footer .btn:nth-child(4) span {
+    background-color: #85586f;
+    border-color: #85586f;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+    max-width: 50rem;
+    width: 100%;
+}
+.footer .img-descriptions {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.footer .radioButtons {
+    display: flex;
+    flex-direction: row;
+}
+.footer .radioButtons .btn {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .radioButtons .btn span {
+    height: 1.3rem;
+    width: 1.3rem;
+    border: 0.1rem solid #f8ecd1;
+    transition: 0.3s ease-in-out;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 0 0.6rem #85586f;
+}
+.footer .radioButtons .btn:hover span {
+    background-color: #deb6ab;
+    border-color: #deb6ab;
+    box-shadow: 0 0 0.6rem #85586f;
 }

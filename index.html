@@ -8,12 +8,45 @@
         <title>CCS Mem Slider</title>
     </head>
     <body>
-        <h1>Slider</h1>
-        <div>test</div>
-        <div>test2</div>
-        <div>test3</div>
-        <div>test4</div>
-        <div>test4</div>
-        <div>test5</div>
+        <h1>Slider on pure CSS</h1>
+        <div class="container">
+            <input type="radio" name="radio" id="img-1" checked />
+            <input type="radio" name="radio" id="img-2" />
+            <input type="radio" name="radio" id="img-3" />
+            <input type="radio" name="radio" id="img-4" />
+
+            <div class="slider-wrapper">
+                <div class="slide slide-1">
+                    <img src="./images/alyssa-kibiloski.jpg" alt="person" />
+                </div>
+                <div class="slide slide-2">
+                    <img
+                        src="./images/robson-hatsukami-morgan.jpg"
+                        alt="person"
+                    />
+                </div>
+                <div class="slide slide-3">
+                    <img src="./images/shea-salisbury.jpg" alt="person" />
+                </div>
+                <div class="slide slide-4">
+                    <img src="./images/sid-saxena.jpg" alt="person" />
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="img-descriptions">
+                    <span>alyssa kibiloski</span>
+                    <span>robson hatsukami morgan</span>
+                    <span>shea salisbury</span>
+                    <span>sid saxena</span>
+                </div>
+                <div class="radioButtons">
+                    <label class="btn" for="img-1"><span></span></label>
+                    <label class="btn" for="img-2"><span></span></label>
+                    <label class="btn" for="img-3"><span></span></label>
+                    <label class="btn" for="img-4"><span></span></label>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
